@@ -1,67 +1,45 @@
 
 <form>
   <div class="form-group">
-    <input required minlength="10"  type="text" [(ngModel)]="eligibilityRequest.householdNumber"
-           name="eligibilityRequest.householdNumber" placeholder="Household Number" class="form-control" value="4092546576">
+    <input required minlength="10"  type="text"
+           name="householdNumber" placeholder="Household Number" class="form-control" value="4092546576">
 
   </div>
   <div class="form-group">
-    <input required minlength="6"  type="text" [(ngModel)]="eligibilityRequest.processingAgent" name="processingAgent"
+    <input required minlength="6"  type="text"  name="processingAgent"
            placeholder="Agent Of Record " class="form-control" value="913141">
   </div>
   <div class="form-group">
-    <input required minlength="2"  type="text" [(ngModel)]="eligibilityRequest.stateCode" name="stateCode"
+    <input required minlength="2"  type="text"  name="stateCode"
            placeholder="State Code" class="form-control" value="MD">
 
   </div>
   <div class="form-group">
-    <input required  type="text" [(ngModel)]="eligibilityRequest.effectiveDate" name="effectiveDate"
+    <input required  type="text" name="effectiveDate"
            placeholder="Effective Date MM/DD/YYYY" class="form-control" value="04/08/2018">
   </div>
   <div class="form-group">
-    <input required  type="text"  [(ngModel)]="eligibilityRequest.firstName" name="firstName"
+    <input required  type="text"  name="firstName"
            placeholder="First Name" class="form-control" value="MIKE">
   </div>
   <div class="form-group">
-    <input required   type="text" [(ngModel)]="eligibilityRequest.lastName" name="lastName"
+    <input required   type="text"  name="lastName"
            placeholder="Last Name" class="form-control" value="MIKE">
   </div>
   <div class="form-group">
-    <input required  type="text" [(ngModel)]="eligibilityRequest.dateOfBirth" name="dateOfBirth"
+    <input required  type="text"  name="dateOfBirth"
            placeholder="Date Of Birth MM/DD/YYYY" class="form-control" value="11/14/1980">
   </div>
   <div class="form-group">
-    <input required  type="text" [(ngModel)]="vinRequest.vin" name="vin"
+    <input required  type="text" [ name="vin"
            placeholder="Enter New VIN" class="form-control" value="JT4RN13S4K6089678">
   </div>
 
 
-  <div class="form-group">
-    <input type="text" name="policyInceptionDate" [(ngModel)]="userInputs.policyInceptionDate" placeholder="policyInceptionDate" class="form-control" required/>
-  </div>
-  <div class="form-group">
-    <input type="text" name="differentGaragingAddress" [(ngModel)]="userInputs.differentGaragingAddress" placeholder="differentGaragingAddress" class="form-control" required/>
-  </div>
-  <div class="form-group">
-    <input type="text" name="vinEtchingIndicator" [(ngModel)]="userInputs.vinEtchingIndicator" placeholder="vinEtchingIndicator" class="form-control" required/>
-  </div>
-  <div class="form-group">
-    <input type="text" name="vehicleUsageCode" [(ngModel)]="userInputs.vehicleUsageCode" placeholder="vehicleUsageCode" class="form-control" required/>
-  </div>
-  <div class="form-group">
-    <input type="text" name="expireSourceCode" [(ngModel)]="userInputs.expireSourceCode" placeholder="expireSourceCode" class="form-control" required/>
-  </div>
-  <div class="form-group">
-    <input type="text" name="insuredAnnualMileage" [(ngModel)]="userInputs.insuredAnnualMileage" placeholder="insuredAnnualMileage" class="form-control" required/>
-  </div>
 
 
 
-  <button class="btn btn-primary" (click)="doEligibility()" > Check Eligibility</button>
+  <button class="btn btn-primary"  > Check Eligibility</button>
 
 </form>
 
-<h3>Eligibility Response</h3>
-<div id="eligibilityResponse">{{eligibilityResponse}}</div>
-<h3>Vin Response</h3>
-<div id="vinResponse">{{vinResponse}}</div>
